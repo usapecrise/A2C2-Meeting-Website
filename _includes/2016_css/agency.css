@@ -139,6 +139,7 @@ header .intro-text .intro-heading {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+	text-transform: uppercase;
 }
 
 header .intro-heading {
