@@ -134,7 +134,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 36px;
     line-height: 1.25;
     max-width: 900px;
     margin-left: auto;
@@ -1416,7 +1416,7 @@ section {
 
 .register-section {
   background: #eef4f8;
-	padding:20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .register-card {
