@@ -1538,3 +1538,8 @@ section {
     height: 980px;
   }
 }
+
+header .intro-text .intro-heading {
+    font-size: 18px;
+    color: yellow;
+}
