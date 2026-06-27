@@ -14,8 +14,31 @@ html {
   height: 100%;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
+*, *:before, *:after {#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 52px;
+    height: 52px;
+    background: #355f7c;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    z-index: 9999;
+}
+
+#backToTop .backToTopArrow {
+    display: block;
+    color: #ffffff !important;
+    font-size: 28px !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold;
+    line-height: 1;
+}
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
@@ -900,8 +923,8 @@ section#contact {
 /* BACK TO TOP BUTTON */
 #backToTop {
     position: fixed;
-    right: 30px;
     bottom: 30px;
+    right: 30px;
     width: 52px;
     height: 52px;
     background: #355f7c;
@@ -911,25 +934,17 @@ section#contact {
     align-items: center;
     justify-content: center;
 
-    color: white;
-    font-size: 20px;
-
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,.18);
-
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s ease, background .25s ease;
     z-index: 9999;
 }
 
-#backToTop.show {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-#backToTop:hover {
-    background: #2c4f68;
+#backToTop .backToTopArrow {
+    display: block;
+    color: #ffffff !important;
+    font-size: 28px !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .tag-row {
