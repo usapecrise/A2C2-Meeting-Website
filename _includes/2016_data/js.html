@@ -13,31 +13,27 @@
 <script>
 $(function() {
 
-  // SHOW / HIDE BUTTON
   $(window).scroll(function() {
     if ($(this).scrollTop() > 300) {
-      $('.back-to-top').addClass('show');
+      $('#backToTop').addClass('show');
     } else {
-      $('.back-to-top').removeClass('show');
+      $('#backToTop').removeClass('show');
     }
   });
 
-// FAST SCROLL TO TOP (no pause)
-$('.back-to-top').on('click', function(event) {
-  event.preventDefault();
+  $('#backToTop').on('click', function(event) {
+    event.preventDefault();
 
-  // temporarily disable CSS smooth scroll
-  document.documentElement.style.scrollBehavior = 'auto';
+    document.documentElement.style.scrollBehavior = 'auto';
 
-  $('html, body').stop(true).animate({
-    scrollTop: 0
-  }, 300);
+    $('html, body').stop(true).animate({
+      scrollTop: 0
+    }, 300);
 
-  // turn smooth back on after
-  setTimeout(function() {
-    document.documentElement.style.scrollBehavior = 'smooth';
-  }, 200);
-});
+    setTimeout(function() {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }, 200);
+  });
 
 });
 </script>
