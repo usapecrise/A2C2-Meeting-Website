@@ -86,3 +86,27 @@ document.querySelectorAll('a.page-scroll').forEach(anchor => {
   });
 });
 </script>
+
+<script>
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const top = section.offsetTop - 120;
+
+    if (window.scrollY >= top) {
+      current = section.id;
+    }
+  });
+
+  if (current) {
+    history.replaceState(null, "", "#" + current);
+  }
+});
+</script>
+
+
+
+
