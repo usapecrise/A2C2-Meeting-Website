@@ -21,7 +21,6 @@ html {
 }
 body {
     margin: 0;
-    padding-bottom: 90px;
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
@@ -454,7 +453,7 @@ section#contact .text-danger {
 }
 
 footer {
-    padding: 12px 0;
+    padding: 8px 0;
     text-align: center;
     background-color: white;
     border-top: 1px solid #eef2f6;
